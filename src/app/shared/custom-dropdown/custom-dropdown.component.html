@@ -1,0 +1,10 @@
+﻿<div class="dropdpownContainer" (click)="toggleDropdownOptions();" tabindex="0">
+   <span [ngClass]="!showDropdownOptions ? 'dropdown-down-icon': searchFiltering ? 'close-filtering' : 'dropdown-top-icon'" (click)="closeFiltering();"></span>
+   <!-- <span [ngClass]="{'close-filtering':searchFiltering}" (click)="closeFiltering();"></span> --> <!-- {'style1': true, 'style2': true} -->
+   <input #selector type="textbox" [ngClass]="!showDropdownOptions ? 'dropdown-value':'open-state-dropdown'" [(ngModel)]="shownValue" placeholder="{{defaultText}}" [disabled]="true">
+      <div [hidden]="!(showDropdownOptions && globalDataCopy && globalDataCopy.length > 0)" class="option-wrapper" [ngClass]="globalDataCopy && globalDataCopy.length > 4 ? 'show-scroll':''" #dropOptions>
+         <div *ngFor="let data of globalDataCopy;let i = index" class="dropdown-option" [class.active]="i === arrowkeyLocation" (click)="onChange(data)"> 
+            <label>{{data.Description}}</label>
+         </div>
+      </div>
+</div>

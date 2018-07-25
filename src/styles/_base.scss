@@ -1,0 +1,135 @@
+// locations
+$assets-path: "~/../src/assets/";
+$fonts-path: $assets-path + "fonts/";
+$svg-image-path: $assets-path + "svg/";
+$png-image-path: $assets-path + "png/";
+
+@font-face {
+    font-family: "MarkPro";
+    src: url($fonts-path+"FontFont-MarkPro.woff");
+}
+
+@font-face {
+   font-family: "MarkProMedium";
+   src: url($fonts-path+"FontFont-MarkPro-Medium.woff");
+}
+
+@font-face {
+   font-family: "MarkProBold";
+   src: url($fonts-path+"FontFont-MarkPro-Bold.woff");
+}
+
+@font-face {
+   font-family: "MarkProLight";
+   src: url($fonts-path+"FontFont-MarkPro-Light.woff");
+}
+
+@font-face {
+   font-family: "MarkProExtraLight";
+   src: url($fonts-path+"FontFont-MarkPro-ExtraLight.woff");
+}
+
+// fonts
+$font-markpro: MarkPro, Helvetica, Arial, Any Sans Serif font;
+$font-markpro-medium: MarkProMedium, Helvetica, Arial, Any Sans Serif font;
+$font-markpro-light: MarkProLight, Helvetica, Arial, Any Sans Serif font;
+$font-markpro-extralight: MarkProExtraLight, Helvetica, Arial, Any Sans Serif font;
+$font-markpro-bold: MarkProBold, Helvetica, Arial, Any Sans Serif font;
+
+// colors
+$black: #000000;
+
+$red: #d22630;
+$red-faded: #f6d4d6;
+$warning: #f2a900;
+$warning-faded: #fceecc;
+
+$accent-green: #cedc00;
+$tertiary-green: #78be20;
+$tertiary-green-faded: #e4f2d2;
+
+$primary-green: #006341;
+
+$secondary-green: #009639;
+$secondary-green-hover: $primary-green;
+$secondary-color: #009639;
+
+$darker-green-faded: #00763e;
+$darker-green: #00753e;
+$dark-blue-green: #006341;
+
+$accent-blue: #00b2a9;
+$ocean-blue: #00b388;
+
+$white: #ffffff;
+$off-white: #f9f9f9;
+
+$darker-grey: #363636;
+$dark-grey: #333333;
+$medium-grey: #666666;
+$medium-light-grey: #9b9b9b;
+$light-grey: #bbbbbb;
+$very-light-grey: #eeeeee;
+
+// breakpoints
+$media-xlg: 1920px;
+$media-lg: 1440px;
+$media-md: 1024px;
+$media-sm: 1023px; //768px;
+$media-xs: 375px;
+$media-xxs: 320px;
+
+$media-xlg-max: $media-xlg - 1;
+$media-lg-max: $media-lg - 1;
+$media-md-max: $media-md - 1;
+$media-sm-max: $media-sm - 1;
+$media-xs-max: $media-xs - 1;
+$media-xxs-max: $media-xxs - 1;
+
+//font sizes
+$mobile-border: 0.3125rem; // 5px
+$small-font: 0.75rem; // 12px
+$label-font: 0.875rem; // 14px
+$body-font: 1rem; // 16px
+$body-large-font: 1.125rem; // 18px
+
+$h6-font: 1.25rem; // 20px
+$section-title-font: 1.375rem; // 22px
+$h5-large-font: 1.5rem; // 24px
+$h4-font: 1.75rem; // 28px
+$h3-font: 1.875rem; // 30px
+$large-page-description-font: 2.125rem; // 34px
+$sub-title-font: 2.5rem; // 40px
+$h2-large-font: 3rem; // 48px
+$title-font: 3.75rem; // 60px
+
+// structures
+$workflow-bg: $off-white;
+$workflow-shadow-color: $very-light-grey;
+$steps-track-width: 85px;
+$steps-track-margin-right: 100px;
+$step-small-size: 55px;
+$step-small-size-sm: 35px;
+
+$workflow-width: 430px;
+$workflow-width-sm: $steps-track-width + $steps-track-margin-right +
+    $workflow-width; // 490px earlier
+$workflow-width-lg: $workflow-width-sm; // 690px earlier
+
+// clearfix
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}

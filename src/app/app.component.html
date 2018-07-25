@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <h1>
+    Custom Dropdown Demo
+  </h1>
+
+  <form [formGroup]="dropdownDemoForm" autocomplete="off" id="dropdown-demo-form" novalidate>
+    <div class="vertical-form">
+			<div class="field">
+        <app-custom-dropdown class="custom-input" formControlName="countries" [dataList]="countryList" (selectedValue)="selectedCountry($event);"></app-custom-dropdown>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+
+
+
